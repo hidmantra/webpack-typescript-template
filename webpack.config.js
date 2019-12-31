@@ -5,11 +5,11 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
     entry: {
         app: './src/index.ts',
-        print: './src/print.ts',
     },
     devtool: 'inline-source-map',
     devServer: {
         contentBase: './dist',
+        hot: true,
     },
     mode: 'development',
     module: {
@@ -44,6 +44,7 @@ module.exports = {
         extensions: ['.tsx', '.ts', '.js'],
     },
     plugins: [
+        // new webpack.HotModuleReplacementPlugin(),
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             title: 'Output Management',
