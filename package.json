@@ -28,7 +28,7 @@
     "@types/node": "^13.1.2",
     "glslCanvas": "^0.1.7",
     "jquery": "^3.4.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "typescript-tslint-plugin": "^0.5.5"
   }
 }
